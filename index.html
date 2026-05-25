@@ -1,562 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Aarchi Portfolio</title>
+    <title>Aarchi | Software Engineer Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <meta name="description" content="Aarchi is a software engineer and AI/ML engineering student building reliable web applications, APIs, and database-backed solutions.">
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
     <link rel="stylesheet" href="css/aos.css">
-
     <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-
-
-<style>
-
-/*======================================
-//--//-->   ABOUT
-======================================*/
-
-.about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.about-mf .about-img {
-  margin-bottom: 2rem;
-}
-
-.about-mf .about-img img {
-  margin-left: 10px;
-}
-
-
-.skill-mf .progress {
-  /* background-color: #cde1f8; */
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
-}
-
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #ffbd39;
-}
-
-
-/* Animation styles */
-#typing-animation {
-  position: relative;
-  font-size: 30px;
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typing 3s steps(20, end) infinite;
-}
-
-#typing-animation:before {
-  content: "";
-  /* position: absolute; */
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #ccc;
-  animation: typing-cursor 0.5s ease-in-out infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes typing-cursor {
-  from {
-    width: 5px;
-  }
-  to {
-    width: 0;
-  }
-}
-
-
-/* project image zoom effect */
-
-.zoom-effect {
-  overflow: hidden;
-  transition: transform 0.3s ease-out;
-}
-
-.zoom-effect:hover {
-  transform: scale(1.1);
-}
-
-
-</style>
-
-
+    <link rel="stylesheet" href="css/portfolio-premium.css">
   </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Aarchi</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="120">
+    <div class="site-bg" aria-hidden="true">
+      <span class="glow glow-one"></span>
+      <span class="glow glow-two"></span>
+      <span class="glow glow-three"></span>
+      <span class="particle particle-one"></span>
+      <span class="particle particle-two"></span>
+      <span class="particle particle-three"></span>
+      <span class="particle particle-four"></span>
+    </div>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
-			  <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/portfolio_profile.jpg);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Aarchi</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Machine Learning Engineer',
-						'Data Analyst',
-						'Database Developer',
-						'Front-end Developer'
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
-						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>Engineer</h2>
-						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
-						<!-- <br> -->
-			            <p><a href="https://github.com/aarchi-8" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
-		</div>
-    </section>
-
-
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-    	<div class="container">
-			<div class="row">
-				<div class="row d-flex align-items-stretch">
-				<!-- <div class="row d-flex"> -->
-					<div class="col-md-6 col-lg-5 d-flex">
-						<div class="img-about img d-flex align-items-stretch">
-							<div class="overlay">
-								<div class="row">
-									<div class="col-sm-6 col-md-5">
-									  <div class="about-img">
-										<img src="images/profile2.jpg" class="img-fluid rounded b-shadow-a" alt="">
-									  </div>
-									</div>
-									<!-- Details next to profile image -->
-									<div class="col-sm-6 col-md-7">
-									  <div class="about-info">
-										<p><span class="title-s">Name: </span> <span>Aarchi</span></p>
-										<p><span class="title-s">Course: </span> <span>Bachelor of Engineering-Computer Science with Specialization in Artificial Intelligence and Machine Learning</span></p>
-										<p><span class="title-s">Address: </span> <span>Punjab, India</span></p>
-									  </div>
-									</div>
-								  </div>
-
-								<div class="skill-mf">
-									<p class="title-s">Skills</p>
-									<span>SQL</span> <span class="pull-right">75%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>PYTHON</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>C++</span> <span class="pull-right">85%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-									
-									<span>Machine Learning</span> <span class="pull-right">90%</span>
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-											aria-valuemax="100"></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-						<div class="row justify-content-start pb-3">
-							<div class="col-md-12 heading-section ftco-animate">
-								
-								<h1 class="big">About</h1>
-								<h2 class="mb-4">About Me</h2>
-								
-								<p>I am a dedicated Bachelor of Science student in Computer Science and Engineering (CSE) with a strong focus on Artificial Intelligence and Machine Learning (AIML). My passion for technology drives me to explore innovative solutions and push the boundaries of what's possible in the field of AI.</p>
-								<ul class="about-info mt-4 px-md-0 px-2">
-									<li class="d-flex"><span>Profile:</span> <span>Machine Learning &amp; Software Developer</span></li>
-									<li class="d-flex"><span>Education:</span> <span>Bachelor of Engineering</span></li>
-									<li class="d-flex"><span>Language:</span> <span>English, Hindi</span></li>
-									<li class="d-flex"><span>Programming Language:</span> <span>C/C++, Python, Java (basics), &amp; HTML/CSS (basics) (Web Technologies) </span></li>
-									<li class="d-flex"><span>Other Skills:</span> <span>Data Structure &amp; Algorithms and Operating System</span></li>
-									<li class="d-flex"><span>Interest:</span> <span>Traveling, Dancing, Cooking and Reading</span></li>
-									
-								</ul>
-							</div>
-						</div>
-
-
-						<div class="counter-wrap ftco-animate d-flex mt-md-3">
-							<div class="text">
-								<p class="mb-4">
-									<span class="number" data-number="4">0</span> <span>+</span>
-									<span>&nbsp; Projects completed</span>
-								</p>
-								<p><a href="https://www.linkedin.com/in/aarchi-11212624a/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </section>
-
-
-
-	
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-          	<h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>As a Bachelor of Science student in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning, I have developed a strong foundation in machine learning algorithms and techniques. My academic training has equipped me with the skills necessary for data analysis, model development, and practical applications of machine learning concepts. I am eager to apply my knowledge in a professional setting, contributing to innovative solutions and collaborating with teams to drive impactful results in the field of AI.</p>
-          </div>
-        </div>
-
-		<br>
-		<br>
-
-		<div class="row">
-			<h1 class="big-4">Education</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-			<div class="row">
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2022-2026</span>
-    					<h2>Bachelor of Engineering in Computer Science Hons. of Specialization in Artificial Intelligence and Machine Learning</h2>
-    					<span class="position">Chandigarh University</span>
-    					<p class="mt-4">Grade: 7.58 Cgpa</p>
-    				</div>
-    			</div>
-
-    			<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2020-2022</span>
-    					<h2>Higher Secondary School</h2>
-    					<span class="position">JMK International School</span>
-    					<p class="mt-4">Percentage: 86%</p>
-    				</div>
-				</div>
-
-				<div class="col-md-6">
-    				<div class="resume-wrap ftco-animate">
-    					<span class="date">2007-2020</span>
-    					<h2>High School</h2>
-    					<span class="position">Christ The King Convent School</span>
-    					<p class="mt-4">Grade: 83.8 </p>
-    				</div>
-				</div>
-    		</div>
-    		</div>
-    	</div>
-    </section>
-
-   
-
-    <section class="ftco-section" id="project-section">
+    <nav class="navbar navbar-expand-lg navbar-dark premium-navbar site-navbar-target" id="ftco-navbar">
       <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            <p>Below are Projects on Machine Learning, Deep Learning, Python and HTML</p>
+        <a class="navbar-brand brand-mark" href="#home-section">Aarchi <span>&lt;/&gt;</span></a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+          <ul class="navbar-nav nav ml-auto align-items-lg-center">
+            <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+            <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+            <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+            <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+            <li class="nav-item"><a href="#certifications-section" class="nav-link"><span>Certifications</span></a></li>
+            <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+            <li class="nav-item nav-cta"><a href="#contact-section" class="nav-link"><span>Let's Connect</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home-section" class="hero-section">
+        <div class="container">
+          <div class="row align-items-center hero-grid">
+            <div class="col-lg-6 hero-copy" data-aos="fade-up">
+              <span class="eyebrow">Hello!</span>
+              <h1>Hello, I'm <span>Aarchi</span></h1>
+              <h2>Software Engineer <span id="typing-animation" aria-live="polite"></span></h2>
+              <p>I build reliable web applications, clean APIs, and database-backed software with practical engineering discipline and AI/ML thinking.</p>
+
+              <div class="hero-actions">
+                <a href="#project-section" class="btn btn-gold">View Projects <span class="icon-arrow-right"></span></a>
+                <a href="documents/22BAI71166_AARCHI.pdf" class="btn btn-ghost" target="_blank" rel="noopener" download>Download Resume <span class="icon-download"></span></a>
+              </div>
+
+              <div class="social-row" aria-label="Social links">
+                <a href="https://github.com/aarchi-8" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"></span></a>
+                <a href="https://www.linkedin.com/in/aarchi-11212624a/" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="icon-linkedin"></span></a>
+                <a href="https://www.instagram.com/aarchi.8/" target="_blank" rel="noopener" aria-label="Instagram"><span class="icon-instagram"></span></a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 hero-visual" data-aos="fade-left" data-aos-delay="120">
+              <div class="availability-card glass-card">
+                <span></span>
+                <p>Available for<br><strong>Software Engineer</strong></p>
+              </div>
+              <div class="portrait-wrap">
+                <img src="images/profil-removebg-preview.png" alt="Portrait of Aarchi">
+              </div>
+              <div class="hero-about-card glass-card">
+                <span class="icon-user-o"></span>
+                <div>
+                  <h3>About Me</h3>
+                  <p>I'm a passionate software engineer who loves building polished, reliable applications.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/aarchi-8/image-classification" class="block-20 zoom-effect" style="background-image: url('images/proj_1.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
+      </section>
 
-                <h3 class="heading"><a href="hhttps://github.com/aarchi-8/image-classification">Image Classification using Convolutional Neural Network (CNN)</a></h3>
-                <p>Led a Machine Leaning initiative focusing on 
-					image classification utilizing Convolutional Neural Networks (CNN) and the CIFAR-10 dataset.</p>
+      <section class="section tech-strip" aria-label="Tech stack">
+        <div class="container">
+          <p>Tech Stack</p>
+          <div class="tech-list">
+            <span>.NET Developer</span>
+            <span>ASP.NET Core</span>
+            <span>Web API</span>
+            <span>MVC</span>
+            <span>LINQ</span>
+            <span>Database SQL</span>
+            <span>C#</span>
+            <span>AI/ML</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about-section">
+        <div class="container">
+          <div class="section-heading text-center" data-aos="fade-up">
+            <span>About</span>
+            <h2>Software engineering with an AI mindset</h2>
+            <p>Aarchi blends .NET development, database design, and machine learning foundations to create useful, elegant digital experiences.</p>
+          </div>
+
+          <div class="row align-items-stretch">
+            <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
+              <div class="about-photo glass-card">
+                <img src="images/pp1-removebg.png" alt="Aarchi profile">
+                <div class="profile-meta">
+                  <p><strong>Name:</strong> Aarchi</p>
+                  <p><strong>Course:</strong> B.E. CSE with AIML</p>
+                  <p><strong>Address:</strong> Punjab, India</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://github.com/aarchi-8/IPL_score_prediction" class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
+            <div class="col-lg-7" data-aos="fade-left">
+              <div class="about-panel glass-card">
+                <h3>Professional Summary</h3>
+                <p>I am a dedicated Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning. I enjoy building web applications, designing APIs, working with databases, and turning ideas into polished products.</p>
+                <ul class="about-info">
+                  <li><span>Profile</span><strong>Software Engineer & .NET Developer</strong></li>
+                  <li><span>Education</span><strong>Bachelor of Engineering</strong></li>
+                  <li><span>Languages</span><strong>English, Hindi</strong></li>
+                  <li><span>Core Skills</span><strong>C#, .NET, ASP.NET Core, Web API, MVC, LINQ, Database SQL</strong></li>
+                  <li><span>Interests</span><strong>Traveling, Dancing, Cooking, Reading</strong></li>
+                </ul>
 
-                <h3 class="heading"><a href="https://github.com/aarchi-8/IPL_score_prediction">IPL Score Prediction using Deep Learning</a></h3>
-                <p>This project aims to predict the scores in Indian Premier League (IPL) 
-					cricket matches using deep learning techniques.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/aarchi-8" class="block-20 zoom-effect" style="background-image: url('images/proj_5.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/aarchi-8">reate Text Summarization Tool that condenses long articles into concise summaries</a></h3>
-                <p>Utilizes NLP and ML to 
-					condense lengthy articles into concise summaries, enhancing information extraction efficiency. User-friendly 
-					interface for seamless interaction. </p>
+                <div class="skill-bars">
+                  <div class="skill-item"><span>.NET Development</span><strong>88%</strong><div><i style="width: 88%"></i></div></div>
+                  <div class="skill-item"><span>ASP.NET Core & Web API</span><strong>86%</strong><div><i style="width: 86%"></i></div></div>
+                  <div class="skill-item"><span>Database SQL & LINQ</span><strong>84%</strong><div><i style="width: 84%"></i></div></div>
+                  <div class="skill-item"><span>C#</span><strong>85%</strong><div><i style="width: 85%"></i></div></div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-	    <br>
-		</div>
-	  <br>
-	  <br>
-	  <div class="row">
-		<h1 class="big-4">Certifications</h1>
-		<div class="underline"></div>
-		<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-		    <div class="row justify-content-start pb-3">
-			    <div class="col-md-12 heading-section ftco-animate">
-		        <ul class="about-info mt-4 px-md-0 px-2">
-			        <li class="d-flex"><span>Microsoft Certified:</span> <span> Azure AI Fundamentals</span></li>
-			        <li class="d-flex"><span>GrowthSchool Certified:</span> <span> ChatGpt 101-B18</span></li>
-			        <li class="d-flex"><span>IBM Certified:</span> <span> Introduction to Big Data using Spark and Hadoop</span></li>
-			        <li class="d-flex"><span>TEACHNOOK Certified Internship Program:</span> <span> Machine Learning from Btech Walleh </span></li>
-			        <li class="d-flex"><span>Oracle Certified Professional:</span> <span> Oracle Cloud Infrastructure 2024 Generative AI Certified Professional</span></li>
-			        <li class="d-flex"><span>Udemy Certified:</span> <span> Machine Learning A-Z: AI, Python & R + ChatGpt Prize [2024]</span></li>
-		        </ul>
-				</div>
-			</div>
-		</div>
-	</div>
-    </section>
-	
-	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
-	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
-			<!-- <div class="container"> -->
-				<div class="row justify-content-center">
-					<div class="col-md-7 ftco-animate text-center">
-						<h2>Projects on<span> Github  </span> </h2>
-						<div class="heading"> <h4> I love to solve problems &amp; uncover hidden data stories </h4>
-						<br>
-						<p><a href="https://github.com/aarchi-8" class="btn btn-primary py-3 px-5">GitHub</a></p>
-						</div>
-					</div>
-				</div>
-			<!-- </div> -->
-		</div>
-	</section>
+      </section>
 
+      <section class="section" id="resume-section">
+        <div class="container">
+          <div class="section-heading text-center" data-aos="fade-up">
+            <span>Resume</span>
+            <h2>Education Timeline</h2>
+            <p>Academic foundations in computer science, AI, data, and practical software development.</p>
+          </div>
 
+          <div class="timeline">
+            <article class="timeline-card glass-card" data-aos="fade-up">
+              <span class="date">2022 - 2026</span>
+              <h3>B.E. Computer Science, AIML Specialization</h3>
+              <p>Chandigarh University</p>
+              <div class="badge-row"><span>CGPA 7.58</span><span>AI/ML</span></div>
+            </article>
+            <article class="timeline-card glass-card" data-aos="fade-up" data-aos-delay="80">
+              <span class="date">2020 - 2022</span>
+              <h3>Higher Secondary School</h3>
+              <p>JMK International School</p>
+              <div class="badge-row"><span>86%</span><span>Science</span></div>
+            </article>
+            <article class="timeline-card glass-card" data-aos="fade-up" data-aos-delay="160">
+              <span class="date">2007 - 2020</span>
+              <h3>High School</h3>
+              <p>Christ The King Convent School</p>
+              <div class="badge-row"><span>83.8%</span><span>Foundation</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <section class="section" id="project-section">
+        <div class="container">
+          <div class="section-heading text-center" data-aos="fade-up">
+            <span>Projects</span>
+            <h2>Featured Work</h2>
+            <p>A curated mix of software engineering, database-backed, machine learning, deep learning, and NLP projects.</p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-up">
+              <article class="project-card featured-project glass-card">
+                <div class="project-body">
+                  <span class="project-kicker">Recent Full-Stack Project</span>
+                  <h3>SmartBank Banking Service</h3>
+                  <p>Full-stack banking system built with ASP.NET Core Web API, MVC, EF Core, SQL Server, and JWT authentication.</p>
+                  <ul class="project-points">
+                    <li>Developed secure RESTful APIs for accounts, transactions, loans, notifications, and support tickets.</li>
+                    <li>Designed service and repository layers with Entity Framework Core and SQL Server.</li>
+                    <li>Implemented JWT authentication, role-based authorization, validation, exception handling, and structured responses.</li>
+                    <li>Integrated APIs with ASP.NET Core MVC frontend and tested service logic using xUnit and Moq.</li>
+                  </ul>
+                  <div class="tags"><span>ASP.NET Core</span><span>Web API</span><span>MVC</span><span>EF Core</span><span>SQL Server</span><span>JWT</span></div>
+                  <a href="https://github.com/mindhackzombies123/banking-service" target="_blank" rel="noopener">GitHub <span class="icon-github"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="80">
+              <article class="project-card featured-project glass-card">
+                <div class="project-body">
+                  <span class="project-kicker">Recent Full-Stack Project</span>
+                  <h3>Smart Hospital Management System</h3>
+                  <p>Full-stack healthcare management system developed with ASP.NET Core MVC and SQL Server.</p>
+                  <ul class="project-points">
+                    <li>Developed appointment booking and patient management modules.</li>
+                    <li>Built admin dashboard features for doctor scheduling, billing management, and patient records.</li>
+                    <li>Implemented CRUD operations, form validation, and role-based access for admin and staff workflows.</li>
+                    <li>Integrated backend APIs with frontend modules for seamless hospital operations.</li>
+                  </ul>
+                  <div class="tags"><span>ASP.NET Core MVC</span><span>SQL Server</span><span>CRUD</span><span>Role-Based Access</span></div>
+                  <a href="https://github.com/CapgeminiSprintGroup8/hms-sprint-team" target="_blank" rel="noopener">GitHub <span class="icon-github"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up">
+              <article class="project-card glass-card">
+                <a class="project-image" href="https://github.com/aarchi-8/image-classification" target="_blank" rel="noopener"><img src="images/proj_1.jpg" alt="Image classification project"></a>
+                <div class="project-body">
+                  <h3>Image Classification using CNN</h3>
+                  <p>Image classification system using Convolutional Neural Networks and the CIFAR-10 dataset.</p>
+                  <div class="tags"><span>Python</span><span>CNN</span><span>Deep Learning</span></div>
+                  <a href="https://github.com/aarchi-8/image-classification" target="_blank" rel="noopener">GitHub <span class="icon-github"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="80">
+              <article class="project-card glass-card">
+                <a class="project-image" href="https://github.com/aarchi-8/IPL_score_prediction" target="_blank" rel="noopener"><img src="images/proj_2.jpg" alt="IPL score prediction project"></a>
+                <div class="project-body">
+                  <h3>IPL Score Prediction</h3>
+                  <p>Deep learning model designed to predict Indian Premier League cricket match scores.</p>
+                  <div class="tags"><span>AI/ML</span><span>Python</span><span>Prediction</span></div>
+                  <a href="https://github.com/aarchi-8/IPL_score_prediction" target="_blank" rel="noopener">GitHub <span class="icon-github"></span></a>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="160">
+              <article class="project-card glass-card">
+                <a class="project-image" href="https://github.com/aarchi-8" target="_blank" rel="noopener"><img src="images/proj_5.jpg" alt="Text summarization project"></a>
+                <div class="project-body">
+                  <h3>Text Summarization Tool</h3>
+                  <p>NLP tool that condenses long articles into concise summaries through a clean user interface.</p>
+                  <div class="tags"><span>NLP</span><span>ML</span><span>Software</span></div>
+                  <a href="https://github.com/aarchi-8" target="_blank" rel="noopener">GitHub <span class="icon-github"></span></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="certifications-section">
+        <div class="container">
+          <div class="section-heading text-center" data-aos="fade-up">
+            <span>Certifications</span>
+            <h2>Continuous Learning</h2>
+            <p>Certifications across cloud AI, generative AI, big data, and machine learning.</p>
+          </div>
+          <div class="cert-grid">
+            <article class="cert-card glass-card" data-aos="fade-up"><span>MS</span><h3>Azure AI Fundamentals</h3><p>Microsoft Certified</p></article>
+            <article class="cert-card glass-card" data-aos="fade-up"><span>GS</span><h3>ChatGPT 101-B18</h3><p>GrowthSchool Certified</p></article>
+            <article class="cert-card glass-card" data-aos="fade-up"><span>IBM</span><h3>Big Data using Spark and Hadoop</h3><p>IBM Certified</p></article>
+            <article class="cert-card glass-card" data-aos="fade-up"><span>TN</span><h3>Machine Learning Internship</h3><p>Teachnook Certified Program</p></article>
+            <article class="cert-card glass-card" data-aos="fade-up"><span>OC</span><h3>OCI 2024 Generative AI Professional</h3><p>Oracle Certified Professional</p></article>
+            <article class="cert-card glass-card" data-aos="fade-up"><span>UD</span><h3>Machine Learning A-Z</h3><p>Udemy Certified</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="github-band">
+        <div class="container text-center" data-aos="zoom-in">
+          <h2>Projects on <span>GitHub</span></h2>
+          <p>I love to solve problems, build polished interfaces, and uncover hidden data stories.</p>
+          <a href="https://github.com/aarchi-8" class="btn btn-gold" target="_blank" rel="noopener">Explore GitHub <span class="icon-github"></span></a>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact-section">
+        <div class="container">
+          <div class="section-heading text-center" data-aos="fade-up">
+            <span>Contact</span>
+            <h2>Let's build something beautiful</h2>
+            <p>Reach out for software engineering roles, project collaborations, or AI/ML ideas.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-cards">
+              <article class="contact-card glass-card" data-aos="fade-up"><span class="icon-map-signs"></span><h3>Location</h3><p>Punjab, India</p></article>
+              <article class="contact-card glass-card" data-aos="fade-up"><span class="icon-phone2"></span><h3>Phone</h3><p><a href="tel:+917719650788">+91-77196-50788</a></p></article>
+              <article class="contact-card glass-card" data-aos="fade-up"><span class="icon-paper-plane"></span><h3>Email</h3><p><a href="mailto:aarchisoorma@gmail.com">aarchisoorma@gmail.com</a></p></article>
+              <article class="contact-card glass-card" data-aos="fade-up"><span class="icon-linkedin"></span><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/in/aarchi-11212624a/" target="_blank" rel="noopener">Connect with Aarchi</a></p></article>
+            </div>
+
+            <form id="contactForm" class="contact-form glass-card" data-aos="fade-left">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required>
+
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project" required></textarea>
+
+              <button type="submit" class="btn btn-gold">Send Message <span class="icon-paper-plane"></span></button>
+              <p id="responseMessage"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="premium-footer">
       <div class="container">
-      	<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Below are the details to reach out to me!</p>
-          </div>
+        <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> Aarchi. All rights reserved.</p>
+        <div class="social-row">
+          <a href="https://github.com/aarchi-8" target="_blank" rel="noopener" aria-label="GitHub"><span class="icon-github"></span></a>
+          <a href="https://www.linkedin.com/in/aarchi-11212624a/" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="icon-linkedin"></span></a>
+          <a href="https://www.instagram.com/aarchi.8/" target="_blank" rel="noopener" aria-label="Instagram"><span class="icon-instagram"></span></a>
         </div>
+      </div>
+    </footer>
 
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-map-signs"></span>
-          		</div>
-          		<h3 class="mb-4">Address</h3>
-	            <p>Punjab, India</p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-phone2"></span>
-          		</div>
-          		<h3 class="mb-4">Contact Number</h3>
-	            <p><a href="tel://0101010101">+91-77196-50788</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-paper-plane"></span>
-          		</div>
-          		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:info@yoursite.com">aarchisoorma@gmail.com</a></p>
-	          </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="https://drive.google.com/file/d/1ZB1Q5w7lnJrqsjG4BdPBnvuKxUImeh5J/view?usp=sharing">resumelink</a></p>
-	          </div>
-          </div>
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#252525"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F5B942"/></svg></div>
 
-		  <div class="container">
-			<br>
-			<br>
-			<div class="row justify-content-center">
-				<div class="col-md-7 ftco-animate text-center">
-					<h2>Have a<span> Question?  </span> </h2>
-						<form id="contactForm">
-							<label for="name">Name:</label>
-							<input type="text" id="name" name="name" placeholder="Your name" required>
-				
-							<label for="email">Email:</label>
-							<input type="email" id="email" name="email" placeholder="Your email" required>
-				
-							<label for="message">Message:</label>
-							<textarea id="message" name="message" placeholder="Your message" required></textarea>
-				
-							<button type="submit">Send Message</button>
-						</form>
-						<p id="responseMessage"></p>
-					</div>
-				
-					<script src="script.js"></script>
-				</div>
-			</div>
-				<br>
-					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-					  <li class="ftco-animate normal-txt">Find me on  </li>
-					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/aarchi-11212624a/"><span class="icon-linkedin"></span></a></li>  
-					  <li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100085358766100"><span class="icon-facebook"></span></a></li>
-				      <li class="ftco-animate"><a href="https://www.instagram.com/aarchi.8/"><span class="icon-instagram"></span></a></li>
-					</ul>
-				<br>
-		   </div>
-   </div>
- </section>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      const typingAnimationElement = document.getElementById('typing-animation');
+      const typingTexts = ['.NET Developer', 'ASP.NET Core Developer', 'Web API Developer', 'C# Developer'];
+      let textIndex = 0;
+      let charIndex = 0;
+      let deleting = false;
 
+      function typeRole() {
+        const current = typingTexts[textIndex];
+        typingAnimationElement.textContent = current.slice(0, charIndex);
 
- 
-	
-    <footer class="ftco-footer ftco-section">
-		<div class="container">
-		  <div class="row">
-			<div class="col-md-12 text-center">
-  
-			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-			</div>
-		  </div>
-		</div>
-	  </footer>
+        if (!deleting && charIndex < current.length) {
+          charIndex += 1;
+        } else if (deleting && charIndex > 0) {
+          charIndex -= 1;
+        } else if (!deleting) {
+          deleting = true;
+          setTimeout(typeRole, 1200);
+          return;
+        } else {
+          deleting = false;
+          textIndex = (textIndex + 1) % typingTexts.length;
+        }
 
+        setTimeout(typeRole, deleting ? 50 : 95);
+      }
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+      if (typingAnimationElement) typeRole();
 
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
+      const contactForm = document.getElementById('contactForm');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+          document.getElementById('responseMessage').textContent = 'Thank you! I will get back to you soon.';
+          contactForm.reset();
+        });
+      }
+    </script>
   </body>
 </html>
